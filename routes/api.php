@@ -3,7 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomerController;
-
+use App\Http\Controllers\BankController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -21,3 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::resource('customers', CustomerController::class);
+
+Route::resource('banks', BankController::class);
